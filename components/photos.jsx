@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 const imageList = [
   "/C:/Users/rahul/Downloads/small-scale photo\\'s/4x5-charli-damelio.avif",
   "/https://media-s3-us-east-1.ceros.com/forbes/images/2022/08/25/5024ce934ae8eb1628b952bad3cd1da8/4x5-charli-damelio.png?imageOpt=1&fit=bounds&width=1082",
-  "/images/photo3.jpg",
+  "/1.webp",
   "/images/photo4.jpg",
   "/images/photo5.jpg",
    "/images/photo5.jpg",
