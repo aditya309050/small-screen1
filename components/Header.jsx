@@ -1,10 +1,10 @@
 import React from 'react';
-import Photos from './photos';
+
 
 const Header = () => {
   return (
     <div className="bg-white text-black p-6 shadow-md rounded-full w-450 h-18 flex mx-8  mt-8 border-3 border-gray-100  ">      
-      <ul className="flex justify space-x-12   text-black ">
+      <ul className="flex justify space-x-12   text-black  text-2xl">
         <div className="text-orange-500">
         <li className="relative cursor-pointer hover:text-orange-500 after:block after:w-0 after:h-[3px] after:bg-orange-500 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">
             Home</li>
@@ -24,7 +24,7 @@ const Header = () => {
         />
       </div>
         </ul>
-        <div className="ml-auto ">
+        <div className="ml-auto  text-2xl">
         <li className=" list-none relative cursor-pointer hover:text-orange-500 after:block after:w-0 after:h-[3px] after:bg-orange-500 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">
             Contact Us</li>
             

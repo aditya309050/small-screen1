@@ -27,8 +27,13 @@ const Photos = () => {
       <Swiper
         spaceBetween={20}
         slidesPerView={4}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
+        loop={true} // Infinite looping
+        autoplay={{
+          delay: 0, // No delay for continuous motion
+          disableOnInteraction: false, // Keeps autoplay active even after user interaction
+          pauseOnMouseEnter: false, // Prevents stopping on hover
+        }}
+        speed={5000} // Slow, smooth, and consistent scrolling
         modules={[Pagination, Autoplay]}
         className="w-full"
       >

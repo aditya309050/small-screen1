@@ -23,6 +23,7 @@ const Body2 = () => {
           <button className="px-8 py-2 bg-orange-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-orange-700 transition duration-300">
             Get in Touch
           </button>
+          
         </div>
       </div>
     </div>
