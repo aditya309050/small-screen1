@@ -26,15 +26,15 @@ const Photos = () => {
     <div className="py-6 w-full px-6">
       <Swiper
         spaceBetween={20}
-        slidesPerView={4}
-        loop={true} // Infinite looping
+        slidesPerView={Math.min(3, imageList.length)} // Adjusts dynamically
+        loop={imageList.length > 3} // Enables loop only if there are enough slides
         autoplay={{
-          delay: 0, // No delay for continuous motion
-          disableOnInteraction: false, // Keeps autoplay active even after user interaction
-          pauseOnMouseEnter: false, // Prevents stopping on hover
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
         }}
-        speed={5000} // Slow, smooth, and consistent scrolling
-        modules={[Pagination, Autoplay]}
+        speed={5000}
+        modules={[Autoplay]} // Removed Pagination if not used
         className="w-full"
       >
         {imageList.map((src, index) => (
