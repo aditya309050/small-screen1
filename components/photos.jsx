@@ -1,8 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 const imageList = [
   "/4.png",
@@ -26,15 +25,15 @@ const Photos = () => {
     <div className="py-6 w-full px-6">
       <Swiper
         spaceBetween={20}
-        slidesPerView={Math.min(3, imageList.length)} // Adjusts dynamically
-        loop={imageList.length > 3} // Enables loop only if there are enough slides
-        autoplay={{
+        slidesPerView={Math.min(3, imageList.length)}
+        loop={imageList.length > 3} 
+        autoplay={imageList.length > 3 ? {
           delay: 0,
           disableOnInteraction: false,
-          pauseOnMouseEnter: false,
-        }}
+          pauseOnMouseEnter: false
+        } : false}
         speed={5000}
-        modules={[Autoplay]} // Removed Pagination if not used
+        modules={[Autoplay]}
         className="w-full"
       >
         {imageList.map((src, index) => (

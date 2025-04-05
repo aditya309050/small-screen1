@@ -8,6 +8,7 @@ const videoList = [
   { src: "/videos/video1.mp4", thumbnail: "/videos/thumb1.jpg" },
   { src: "/videos/video2.mp4", thumbnail: "/videos/thumb2.jpg" },
   { src: "/videos/video3.mp4", thumbnail: "/videos/thumb3.jpg" },
+  { src: "/videos/video4.mp4", thumbnail: "/videos/thumb4.jpg" }, // Added one more slide
 ];
 
 const Video = () => {
@@ -17,7 +18,7 @@ const Video = () => {
         spaceBetween={20}
         slidesPerView={3}
         centeredSlides={true}
-        loop={true}
+        loop={videoList.length > 3} // Loop only if enough slides
         navigation={true}
         modules={[Navigation]}
         className="w-full"
@@ -25,9 +26,7 @@ const Video = () => {
         {videoList.map((video, index) => (
           <SwiperSlide key={index} className="flex justify-center">
             <div
-              className={`relative w-[260px] h-[460px] bg-white rounded-[30px] shadow-lg overflow-hidden border-[4px] border-black transition-transform duration-300 ${
-                index === 1 ? "scale-110 w-[300px] h-[500px]" : ""
-              }`}
+              className={`relative w-[260px] h-[460px] bg-white rounded-[30px] shadow-lg overflow-hidden border-[4px] border-black transition-transform duration-300`}
             >
               <video
                 className="w-full h-full object-cover"
@@ -43,23 +42,25 @@ const Video = () => {
       </Swiper>
 
       {/* Custom Navigation Styling */}
-      <style jsx>{`
-        .swiper-button-prev,
-        .swiper-button-next {
-          color: #ff6600;
-          font-size: 24px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 50px;
-          height: 50px;
-        }
-        .swiper-button-prev {
-          left: -60px;
-        }
-        .swiper-button-next {
-          right: -60px;
-        }
-      `}</style>
+      <style>
+        {`
+          .swiper-button-prev,
+          .swiper-button-next {
+            color: #ff6600;
+            font-size: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+          }
+          .swiper-button-prev {
+            left: -60px;
+          }
+          .swiper-button-next {
+            right: -60px;
+          }
+        `}
+      </style>
     </div>
   );
 };
