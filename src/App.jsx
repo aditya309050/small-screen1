@@ -5,7 +5,8 @@ import Photos from '../components/photos';
 import Body2 from '../components/Body2';
 import Body3 from '../components/Body3';
 import Video from '../components/video';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
+
 
 const App = () => {
   return (
