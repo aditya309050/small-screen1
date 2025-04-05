@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 
-// ✅ Use the correct import for Vite/React
-import { SpeedInsights } from "@vercel/speed-insights/react";
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
