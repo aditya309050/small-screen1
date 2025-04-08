@@ -4,7 +4,7 @@ import Body from '../components/Body';
 import Photos from '../components/photos';
 import Body2 from '../components/Body2';
 import Body3 from '../components/Body3';
-import Video from '../components/video';
+import Video from '../components/Video';
 import Footer from '../components/Footer';
 
 
