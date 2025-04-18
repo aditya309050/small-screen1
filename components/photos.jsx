@@ -22,16 +22,25 @@ const imageList = [
 
 const Photos = () => {
   return (
-    <div className="py-6 w-full px-6">
+    <div className="py-6 w-full px-4 sm:px-6 md:px-10 lg:px-16">
       <Swiper
-        spaceBetween={20}
-        slidesPerView={Math.min(3, imageList.length)}
-        loop={imageList.length > 3} 
-        autoplay={imageList.length > 3 ? {
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false
-        } : false}
+        spaceBetween={10}
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          480: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        }}
+        loop={imageList.length > 3}
+        autoplay={
+          imageList.length > 3
+            ? {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+              }
+            : false
+        }
         speed={5000}
         modules={[Autoplay]}
         className="w-full"
@@ -39,11 +48,15 @@ const Photos = () => {
         {imageList.map((src, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`w-full h-120 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${
-                index % 2 === 0 ? "mt-8" : "mb-8"
+              className={`w-full h-52 sm:h-64 md:h-72 lg:h-80 xl:h-96 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${
+                index % 2 === 0 ? "mt-6 sm:mt-8" : "mb-6 sm:mb-8"
               }`}
             >
-              <img src={src} alt={`Photo ${index + 1}`} className="w-full h-full object-cover" />
+              <img
+                src={src}
+                alt={`Photo ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
             </div>
           </SwiperSlide>
         ))}
