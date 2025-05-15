@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-20">
       {/* Call to Action Section */}
-      <div className="max-w-7xl mx-auto text-center">
-        <div className="bg-white/20 text-white py-10 px-6 rounded-2xl mx-6 sm:mx-0">
+      <div className="max-w-9xl mx-auto text-center">
+        <div className="bg-white/20 text-white py-10 px-4 sm:px-6 rounded-2xl max-w-sm sm:max-w-4xl md:max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold">Want To Know More?</h2>
           <button className="mt-5 bg-white text-black px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition hover:bg-gray-100">
             Get in touch
@@ -14,39 +14,49 @@ const Footer = () => {
       </div>
 
       {/* Footer Links and Contact */}
-      <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+      <div className="max-w-15xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-2xl ">
         {/* Important Links */}
-        <div className="text-center sm:text-left">
-          <h3 className="font-semibold text-3xl mb-4">Important Links</h3>
-          <ul className="space-y-3 text-lg">
-            <li><a href="#" className="hover:text-orange-300 transition">Home</a></li>
-            <li><a href="#" className="hover:text-orange-300 transition">Creators</a></li>
-            <li><a href="#" className="hover:text-orange-300 transition">Work</a></li>
-            <li><a href="#" className="hover:text-orange-300 transition">About</a></li>
-            <li><a href="#" className="hover:text-orange-300 transition">Contact</a></li>
-            <li><a href="#" className="hover:text-orange-300 transition">Privacy Policy</a></li>
+        <div>
+          <h3 className="font-semibold text-3xl sm:text-2xl text-center">Important Links</h3>
+          <ul className="mt-3 space-y-1 ">
+            <li className="relative group ">
+              <a href="#" className=" font-thin relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-500 group-hover:after:w-full ">Home</a>
+            </li>
+            <li className="relative group">
+              <a href="#" className="font-thin relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-500 group-hover:after:w-full">Creators</a>
+            </li>
+            <li className="relative group">
+              <a href="#" className="font-thin relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-500 group-hover:after:w-full">Work</a>
+            </li>
+            <li className="relative group">
+              <a href="#" className="font-thin relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-500 group-hover:after:w-full">About</a>
+            </li>
+            <li className="relative group">
+              <a href="#" className="font-thin relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-500 group-hover:after:w-full">Contact</a>
+            </li>
+            <li className="relative group">
+              <a href="#" className="font-thin relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-500 group-hover:after:w-full">Privacy Policy</a>
+            </li>
           </ul>
         </div>
 
         {/* Contact Section */}
-        <div className="text-center sm:text-left">
-          <h3 className="font-semibold text-3xl mb-4">Contact Us</h3>
-          <p className="font-thin">info@smallscreenmarketing.com</p>
+        <div>
+          <h3 className="font-semibold text-2xl sm:text-xl text-center">Contact Us</h3>
+          <p className="mt-7 font-thin">info@smallscreenmarketing.com</p>
         </div>
 
         {/* Social Links */}
-        <div className="text-center sm:text-left">
-          <h3 className="font-semibold text-3xl mb-4">Follow Us:</h3>
-          <div className="flex justify-center sm:justify-start space-x-6">
-            <a href="#" className="text-3xl hover:text-orange-300 transition"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="text-3xl hover:text-orange-300 transition"><i className="fab fa-facebook"></i></a>
-            <a href="#" className="text-3xl hover:text-orange-300 transition"><i className="fab fa-twitter"></i></a>
+        <div>
+          <h3 className="font-semibold text-2xl sm:text-xl text-center">Follow Us:</h3>
+          <div className="mt-3 flex justify-center md:justify-start">
+            <a href="#" className="text-2xl"><i className="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="text-center text-xs mt-10 opacity-80">
+      <div className="text-center text-xs mt-40 opacity-80">
         SmallScreen Marketing © 2024 | Design & Dev: <span className="font-semibold">KURAGE</span>
       </div>
     </footer>

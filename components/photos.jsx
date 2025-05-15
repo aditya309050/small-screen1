@@ -22,7 +22,7 @@ const imageList = [
 
 const Photos = () => {
   return (
-    <div className="py-6 w-full px-4 sm:px-6 md:px-10 lg:px-16">
+    <div className="py-8 w-full px-8 sm:px-6 md:px-10 lg:px-16">
       <Swiper
         spaceBetween={10}
         breakpoints={{

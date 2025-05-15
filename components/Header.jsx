@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="bg-white text-black p-4 sm:p-6 shadow-md rounded-full w-full max-w-screen-xl mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-4 sm:mt-8 border-3 border-gray-100 relative">
+    <div className="bg-white text-black p-1 sm:p-6 shadow-md rounded-full w-full max-w-screen-x2 mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-4 sm:mt-8 border-3 border-gray-100 relative">
       
       {/* Left Menu */}
-      <ul className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start items-center gap-4 sm:gap-12 text-black text-lg sm:text-xl md:text-2xl w-full sm:w-auto">
+      <ul className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start items-center gap-2 sm:gap-18 text-black text-lg sm:text-xl md:text-2xl w-full sm:w-auto">
         <div className="text-orange-500">
           <li className="relative cursor-pointer hover:text-orange-500 after:block after:w-0 after:h-[3px] after:bg-orange-500 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">
             Home
