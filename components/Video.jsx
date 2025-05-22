@@ -8,17 +8,19 @@ const videoList = [
   { src: "3v.mp4", thumbnail: "video.png" },
   { src: "1v.mp4", thumbnail: "image.png" },
   { src: "4v.mp4", thumbnail: "lack.png" },
+  { src: "4v.mp4", thumbnail: "lack.png" },
+  { src: "4v.mp4", thumbnail: "lack.png" },
 ];
 
 const Video = () => {
   return (
-    <div className="py-10 max-w-7xl px-6 mx-auto relative mt-10">
+    <div className="py-2 max-w-7xl px-6 mx-auto relative mt-10">
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
         slidesPerGroup={1}
         centeredSlides={true}
-        loop={videoList.length > 3}
+        loop={videoList.length > 5}
         navigation={true}
         breakpoints={{
           640: {
