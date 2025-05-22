@@ -4,13 +4,13 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
 const imageList = [
-  "/4.png",
+  "/1.png",
   "/2.png",
-  "/1.webp",
   "/3.png",
+  "/15.png",
   "/5.png",
   "/6.png",
-  "/7.png",
+  "/lack.png",
   "/8.png",
   "/9.png",
   "/10.png",
@@ -48,8 +48,8 @@ const Photos = () => {
         {imageList.map((src, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`w-full h-52 sm:h-64 md:h-72 lg:h-80 xl:h-96 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${
-                index % 2 === 0 ? "mt-6 sm:mt-8" : "mb-6 sm:mb-8"
+              className={`w-full h-[22rem] sm:h-[34rem]  md:h-[30rem] lg:h-[34rem] xl:h-[40rem] rounded-xl overflow-hidden shadow-lg ${
+                index % 2 === 0 ? "mt-8 sm:mt-8" : "mb-4 sm:mb-8 "
               }`}
             >
               <img
