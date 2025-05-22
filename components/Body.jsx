@@ -2,7 +2,7 @@ import React from 'react';
 
 const Body = () => {
   return (
-    <div className="flex flex-col items-center text-gray-800 mt-14 py-8 px-6 sm:px-8 md:px-12">
+    <div className="  bg-gray-50 flex flex-col items-center text-gray-800 mt-14 py-8 px-6 sm:px-8 md:px-12">
       
       {/* Main Heading */}
       <p className="text-center text-4xl sm:text-5xl md:text-7xl font-bold leading-snug">

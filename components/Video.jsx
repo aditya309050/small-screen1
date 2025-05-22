@@ -5,9 +5,9 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const videoList = [
-  { src: "/videos/video1.mp4", thumbnail: "/videos/thumb1.jpg" },
-  { src: "/videos/video2.mp4", thumbnail: "/videos/thumb2.jpg" },
-  { src: "/videos/video3.mp4", thumbnail: "/videos/thumb3.jpg" },
+  { src: "3v.mp4", thumbnail: "video.png" },
+  { src: "1v.mp4", thumbnail: "image.png" },
+  { src: "4v.mp4", thumbnail: "lack.png" },
 ];
 
 const Video = () => {
@@ -42,8 +42,12 @@ const Video = () => {
             <div className="relative w-[260px] h-[460px] mx-auto bg-white rounded-[30px] shadow-lg overflow-hidden border-[4px] border-black transition-transform duration-300">
               <video
                 className="w-full h-full object-cover"
-                controls
+                muted
+                loop
+                controls={false}
                 poster={video.thumbnail}
+                onMouseEnter={(e) => e.target.play()}
+                onMouseLeave={(e) => e.target.pause()}
               >
                 <source src={video.src} type="video/mp4" />
                 Your browser does not support the video tag.

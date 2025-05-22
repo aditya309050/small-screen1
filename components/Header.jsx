@@ -4,7 +4,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md rounded-full max-w-7xl mx-auto px-4 py-7 sm:px-6 relative z-50 flex items-center justify-between mt-4">
+    <header className="bg-white shadow- border border-gray-200 rounded-full  lg:ml-10 lg:mr-10 mx-auto px-4 py-7 sm:px-6 relative z-50 flex items-center justify-between mt-5 ">
 
       {/* Left side: Hamburger menu on sm/md only */}
       <div className="lg:hidden">
@@ -27,13 +27,15 @@ const Header = () => {
       </div>
 
       {/* Desktop menu - hidden on sm/md */}
-      <ul className="hidden lg:flex items-center gap-6 text-lg font-medium ml-auto">
-        <li className="cursor-pointer hover:text-orange-500">Home</li>
-        <li className="cursor-pointer hover:text-orange-500">Creator</li>
-        <li className="cursor-pointer hover:text-orange-500">Work</li>
-        <li className="cursor-pointer hover:text-orange-500">About</li>
-        <li className="cursor-pointer hover:text-orange-500">Contact Us</li>
-      </ul>
+       <ul className="hidden lg:flex items-center text-lg font-medium w-full">
+  <li className="cursor-pointer hover:text-orange-500 mr-6">Home</li>
+  <li className="cursor-pointer hover:text-orange-500 mr-6">Creator</li>
+  <li className="cursor-pointer hover:text-orange-500 mr-6">Work</li>
+  <li className="cursor-pointer hover:text-orange-500 mr-6">About</li>
+  <li className="cursor-pointer hover:text-orange-500 ml-auto">Contact Us</li>
+</ul>
+
+      
        <div className="ml-auto text-lg font-medium cursor-pointer hover:text-orange-500 sm:flex md:flex lg:hidden">
         Contact Us
          </div>
